@@ -145,19 +145,23 @@ nav {
  
 .start_right::before { 
     content: ''; 
-    background-image: url(../callmar/img/scuba\ diver.svg); 
+    background-image: url(./img/scuba\ diver.svg); 
     background-size: contain; 
     width: 577px; 
     height: 449px; 
-    filter: drop-shadow(10px 59px 77px #00000040); 
+    filter: drop-shadow(10px 10px 10px #00000040); 
+    margin-top: 111px; 
+    background-repeat: no-repeat;
 } 
  
 .start_left::after { 
     content: ''; 
-    background-image: url(../callmar/img/scuba\ divertwo.svg); 
+    background-image: url(./img/scuba\ divertwo.svg); 
     background-size: contain; 
     width: 474px; 
     height: 325px; 
+    filter: drop-shadow(10px 10px 10px #00000040); 
+    background-repeat: no-repeat;
 } 
  
 .start_item { 
@@ -224,4 +228,104 @@ nav {
 .media iframe { 
     width: 100%; 
     height: 668px; 
+}
+
+.service_ {
+    display: flex;
+    justify-content: center;
+    gap: 352px;
+    margin-top: 330px;
+    position: relative;
+    width: 1520px;
+    margin: 0 auto;
+    margin-top: 330px;
+
+}
+
+.service::before {
+    content: url(./img/submarine.svg);
+    position: absolute;
+    top: -330;
+    right: -0;
+
+}
+
+.service::after {
+    content: url(./img/fish.svg);
+    position: absolute;
+    bottom: -300px;
+    left: -180px;
+}
+
+.service_item {
+    padding: 50px 65px;
+    background-image: url(./img/bg-service.svg);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.service_item h2 {
+    font-size: 48px;
+    font-weight: 700px;
+    line-height: 72px;
+    color: white;
+}
+
+.service_item p {
+    color: #F2F2F2;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+
+}
+
+.service_item button {
+    font-size: 36px;
+    line-height: 42px;
+    color: white;
+    margin-top: 60px;
+    border: solid 5px white;
+    padding: 17px 50px;
+    cursor: pointer;
+}
+
+footer {
+    height: 452px;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(./img/bg-service.svg);
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    header {
+        width: 1024px;
+    }
+
+    .banner img {
+        width: 905px;
+        height: 365px;
+    }
+
+    .start_item {
+        width: 538px;
+        height: 208px;
+
+    }
+
+    .service_item h2 {
+        font-size: 18px !important;
+
+
+    }
+
+    .service {
+        width: 924px;
+    }
+
+
+    .head_decore_right {
+        width: 200px;
+    }
 }
